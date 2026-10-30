@@ -1,20 +1,24 @@
-[README (2).md](https://github.com/user-attachments/files/34108723/README.2.md)
-# bubble-sort-farmaciaControle de Validade de Medicamentos — Bubble Sort em C
-Disciplina: Algoritmos e Pensamento Computacional
-Instituição: UDF — Centro Universitário do Distrito Federal
-Professora: Profa. Karla R. Sartin
-Atividade: Aplicação do Algoritmo Bubble Sort
+# Controle de Validade de Medicamentos — Bubble Sort em C
 
-Integrantes
+Programa em C que ordena o estoque de uma farmácia pelos dias que faltam para o vencimento, usando o algoritmo Bubble Sort, e classifica cada item como OK, ATENÇÃO ou URGENTE.
 
-| Nome | Matrícula | GitHub |
-|------|-----------|--------|
-| Rian Do Nascimento Ribeiro | 47582006 | [@rian-ribeiro-dev](https://github.com/rian-ribeiro-dev) |
-| Jean Emanuel Alves de Morais | 47385804 | [@Jeanemanuel](https://github.com/Jeanemanuel) |
-| Emilly Lorrany Alves dos Santos | 46894993 | [@emillyy-cell](https://github.com/emillyy-cell) |
-| Alair Eloi de Araujo Neto |         | [@otencoding](https://github.com/otencoding) |
+| Item | Informação |
+|---|---|
+| **Disciplina** | Algoritmos e Pensamento Computacional |
+| **Instituição** | UDF — Centro Universitário do Distrito Federal |
+| **Professora** | Profa. Karla R. Sartin |
+| **Atividade** | Aplicação do Algoritmo Bubble Sort |
 
-Problema do cotidiano
+## Integrantes
+
+| Nome | GitHub |
+|------|--------|
+| Rian Do Nascimento Ribeiro | [@rian-ribeiro-dev](https://github.com/rian-ribeiro-dev) |
+| Jean Emanuel Alves de Morais | [@Jeanemanuel](https://github.com/Jeanemanuel) |
+| Emilly Lorrany Alves dos Santos | [@emillyy-cell](https://github.com/emillyy-cell) |
+| Alair Eloi de Araujo Neto | [@otencoding](https://github.com/otencoding) |
+
+## Problema do cotidiano
 
 Uma farmácia tem dezenas de medicamentos no estoque, e cada lote tem uma data de validade diferente. Quando a equipe não sabe quais produtos vencem primeiro, acontece o seguinte:
 
@@ -24,7 +28,7 @@ Uma farmácia tem dezenas de medicamentos no estoque, e cada lote tem uma data d
 
 **Por que ordenar?** Com a lista ordenada pelos **dias que faltam para o vencimento**, o farmacêutico vê na hora quais itens precisam sair primeiro, ganhar promoção ou ser conferidos. Também fica fácil descobrir o menor e o maior prazo do estoque.
 
-Objetivo
+## Objetivo
 
 Desenvolver em C um programa que:
 
@@ -34,7 +38,7 @@ Desenvolver em C um programa que:
 4. mostre o estoque depois da ordenação, com a situação de cada item (OK / ATENCAO / URGENTE).
 5. apresente um resumo com o número de comparações e trocas, a quantidade de itens críticos e os prazos extremos.
 
-Como o Bubble Sort funciona
+## Como o Bubble Sort funciona
 
 O Bubble Sort (ordenação por bolha) compara elementos vizinhos do array e troca os dois de lugar quando estão na ordem errada. A cada passada completa, o maior valor (no critério crescente) "sobe" até o fim do array, como uma bolha subindo na água.
 
@@ -60,7 +64,7 @@ No código ([`farmacia.c`](farmacia.c), função `bubbleSort`):
 
 > O programa **não** usa funções prontas de ordenação, como `qsort()`. Toda a ordenação é feita pelo Bubble Sort implementado no código.
 
-Como compilar e executar
+## Como compilar e executar
 
 Pré-requisito: um compilador C (GCC, MinGW no Windows, Code::Blocks ou OnlineGDB).
 
@@ -86,7 +90,7 @@ farmacia.exe
 
 As entradas são validadas: se o usuário digitar uma opção inválida, o programa pede o valor de novo.
 
-Exemplo de entrada e saída
+## Exemplo de entrada e saída
 
 **Entrada:** `1` (estoque de exemplo) e `1` (crescente)
 
@@ -141,7 +145,7 @@ Menor prazo: Insulina NPH (3 dias)
 Maior prazo: Omeprazol 20mg (300 dias)
 ```
 
-Tecnologias e ferramentas
+## Tecnologias e ferramentas
 
 - **Linguagem C** (padrão C99), com as bibliotecas `stdio.h` e `string.h`
 - **GCC** para compilar
@@ -149,7 +153,7 @@ Tecnologias e ferramentas
 - **Git** para controlar as versões
 - **GitHub** para hospedar o repositório e colaborar
 
-Estrutura do repositório
+## Estrutura do repositório
 
 ```
 .
@@ -158,7 +162,7 @@ Estrutura do repositório
 └── .gitignore   # ignora os executáveis gerados
 ```
 
- Considerações finais
+## Considerações finais
 
 O projeto mostrou como um algoritmo simples, como o Bubble Sort, resolve um problema real de gestão de estoque. Durante o desenvolvimento, aplicamos:
 
